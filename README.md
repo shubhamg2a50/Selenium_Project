@@ -1,27 +1,5 @@
 Selenium Automation Testing of DemoBlaze Website
 
-Table of Contents
-
-Objective
-
-Overview
-
-Project Structure
-
-Features and Functionalities
-
-Setup and Prerequisites
-
-How to Run Tests
-
-Test Cases Covered
-
-Code Implementation
-
-Documents and Explanations
-
-Video Explanation
-
 Objective
 
 The purpose of this project is to automate the testing of the DemoBlaze e-commerce website using Selenium WebDriver. The project ensures the website's core functionalities such as login, category filtering, adding products to the cart, and form submissions work seamlessly.
@@ -162,23 +140,7 @@ Verify text visibility and readability
 
 Verify the website title
 
-Code Implementation
 
-Example Code: Adding a Product to the Cart
-
-public void addToCart(String productName) {
-    WebElement product = driver.findElement(By.xpath("//a[normalize-space()='" + productName + "']"));
-    product.click();
-    WebElement addToCartBtn = driver.findElement(By.xpath("//a[normalize-space()='Add to cart']"));
-    addToCartBtn.click();
-    handleAlert();
-}
-
-public void handleAlert() {
-    Alert alert = driver.switchTo().alert();
-    System.out.println("Alert Message: " + alert.getText());
-    alert.accept();
-}
 
 Documents and Explanations
 
@@ -199,7 +161,3 @@ Code structure and key files.
 Step-by-step execution of test cases.
 
 Explanation of results and reporting.
-
-Conclusion
-
-This README provides a comprehensive guide to the DemoBlaze automation testing project. The organized structure, detailed documentation, and clear test execution ensure maintainability and scalability for future enhancements.
